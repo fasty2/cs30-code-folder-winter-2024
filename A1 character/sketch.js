@@ -11,8 +11,12 @@ function setup() {
 }
 
 function draw() {
+    let mw = width/2;
+    let hw = height/2;
+
   background(220);
-  circle(width/2, height/2, 100);
+  circle(hw/2, mw, 100);
   fill(255)
-  rect()
+  rect(  370, 439, 50, 40,);
+  
 }
