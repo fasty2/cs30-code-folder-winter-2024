@@ -5,27 +5,30 @@
 // Extra for Experts:
 // - describe what you did to take this project "above and beyond"
 
-let x, y;
-let time = 0;
-let timy = 0;
-
-function setup(){
-createCanvas(windowWidth, windowHeight); 
-// width and height  
-
-x = width/2;
-y = height/2;
-
+function setup() {
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background(220);
+    let mw = width/2;
+    let hw = height/2;
 
+  background(220);
+  circle(hw/2, mw, 100);
+  fill(255)
+  rect(  170, 405, 100, 200,);
+  
+  rect( 120, 450, 50, 15   );
+
+  rect( 120, 405, 10.9, 60 );
   x = noise(time) * width;
 
+  rect(350, 400, 40, 15 )
   fill("black"); 
   circle(x,y,0); //make zero 40
 
   time += 0.4;
 
+  
+  
 }
