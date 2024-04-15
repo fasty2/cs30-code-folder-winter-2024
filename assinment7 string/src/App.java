@@ -10,8 +10,19 @@ public class App {
         fixed1 = fixed1 + message1.substring(end1, message1.length());
 
         System.out.println(fixed1);
-        //String message2 = "That was great - lol.";
-        //String target2 = "lol";
+        System.out.println(3 + 6);
+
+        String message2 = "That was great - lol.";
+        String target2 = "lol";
+        int pos2 = message2.indexOf(target2);
+        int end2 = pos2 + target2.length();
+        
+        String fix = message2.substring(0, 14);
+        fix = fix + " laughing out loud";
+
+        System.out.println(fix);
+
+
         
     }
 }
