@@ -28,7 +28,7 @@ public class App {
         int num = key.nextInt();
         key.nextLine();
         // key.nextLine allows it to continue on 
-        System.out.print("Enter a Sentence: ");
+        System.out.print("Enter a Sent ence: ");
         String sentence = key.nextLine();
         System.out.println(num + " " + sentence);
     
