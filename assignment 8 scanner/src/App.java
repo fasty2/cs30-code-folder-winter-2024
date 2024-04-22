@@ -7,8 +7,12 @@ public class App {
 
         System.out.println("Enter an integer::");
         int num1 = keyboard.nextInt();
-        double num2 = num1;
-        System.out.println(num2);
+        System.out.println( num1);
+        
+        
+        System.out.println("Enter an second integer::");
+        int num2 = keyboard.nextInt();
+        System.out.println();
         System.out.println( num2 + num1);
         
         // System.out.println("Enter an integer::");
@@ -17,8 +21,11 @@ public class App {
 
         System.out.println("Enter a double ::");
         double num3 = keyboard.nextDouble();
-        double num4 = num3;
-        System.out.println ( num2 + num3);
+        
+        System.err.println("enter a second double again");
+        double num4 = keyboard.nextDouble();
+
+        System.out.println("Your answer is:" + (num3 + num4));
        
         // System.out.println("Enter a float I.E  2.3f::");
         // float num4 = keyboard.nextFloat();
