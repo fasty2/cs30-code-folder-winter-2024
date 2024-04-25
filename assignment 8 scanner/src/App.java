@@ -39,7 +39,7 @@ public class App {
         // float num6 = keyboard.nextByte();
         // System.out.println(num6);
 
-        System.out.println( "\"99" );
+        
       
     } 
 }
