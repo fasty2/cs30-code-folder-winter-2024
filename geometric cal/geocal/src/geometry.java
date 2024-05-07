@@ -37,7 +37,7 @@ public class geometry {
     }
     public static void sareaofcube( double s ) {
         double surfaceArea = (6*s*2);
-        System.out.println("surface area is" + surfaceArea);
+        System.out.println("surface area is " + surfaceArea);
 
 
 
