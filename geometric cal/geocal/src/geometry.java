@@ -32,7 +32,14 @@ public class geometry {
     }
     public static void areaofcircle( double radius) {
         double area = (Math.PI * radius*radius);
-        System.out.println("area of circle" + area);;
+        System.out.println("area of circle" + area);
+
+    }
+    public static void sareaofcube( double s ) {
+        double surfaceArea = (6*s*2);
+        System.out.println("surface area is" + surfaceArea);
+
+
 
     }
 }

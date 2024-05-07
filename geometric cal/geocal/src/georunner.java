@@ -13,6 +13,10 @@ public class georunner {
         System.out.println("input value of radius");
         double radius = keyboard.nextInt();
         geometry.areaofcircle( radius);
+
+        System.out.println("imput value of s ");
+        double s = keyboard.nextInt();
+        geometry.sareaofcube(s);
     }
 }
 
