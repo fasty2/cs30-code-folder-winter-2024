@@ -3,10 +3,10 @@ class Ball {
     int cr, cg, cb; //RGB values
     int dx, dy; //Velocity or Speed Values
     int width, height; //variables for the screen dimensions
-    int grav; 
     boolean infected;
+
     // Constructor Method
-    Ball(int ballx, int bally, int balld, int windoww, int windowh, boolean ballinf) {
+    Ball(int ballx, int bally, int balld, int windoww, int windowh) {
         x = ballx; //set the x cord
         y = bally; //set the y cord
         d = balld; //set the radius
@@ -19,25 +19,13 @@ class Ball {
         //Set Velocity
         dx = int( random(-10,10));
         dy = int( random(-10,10));
-        grav = - 1;
 
         // Passing over the width and height data of the screen
         width = windoww; 
         height = windowh;
-
-        infected = ballinf; 
     }
 
     void display() {
-        if (infected == true) {
-            
-
-               
-            cr = 255;
-            cg = 0; 
-           cb = 0;
-        }
-
         fill(cr, cg, cb);
         circle(x,y,d);
     }
@@ -46,13 +34,10 @@ class Ball {
         //apply the rate of change (velocity)
         x = x + dx;
         y = y + dy;
-        dy = dy - grav;// apply gravity to y
-
 
         if (x <= 0 + d/2 || x >= width - d/2) {
             // Reverses direction
             dx = dx * -1;
-
         }
 
         if (y <= 0 + d/2 || y >= height - d/2) {
@@ -67,7 +52,7 @@ class Ball {
 
         //Bounce the ball
         if (distanceApart < d) {
-             //Store first velocity
+            //Store first velocity
             int tempdx = dx;
             int tempdy = dy;
 
@@ -78,20 +63,8 @@ class Ball {
             //Ball 2 gets velocity 1
             otherBall.dx = tempdx;
             otherBall.dy = tempdy;
-        // pass the infection
-   
-   
-    if (otherBall.infected == true && infected == false){
-        infected = true; 
-    }
+        }
 
-    else if (otherBall.infected == false && infected == true){
-        infected = false; 
-    }
-    
-    }
-
-          
     }
 
 }
