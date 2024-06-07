@@ -19,11 +19,12 @@ class Ball {
         //Set Velocity
         dx = int( random(-10,10));
         dy = int( random(-10,10));
-
+        grav = -1;
         // Passing over the width and height data of the screen
         width = windoww; 
         height = windowh;
 
+        infected = false;
         
     }
 
@@ -42,6 +43,7 @@ class Ball {
         //apply the rate of change (velocity)
         x = x + dx;
         y = y + dy;
+        dy = dy - grav; // should agg gravity
 
         if (x <= 0 + d/2 || x >= width - d/2) {
             // Reverses direction
