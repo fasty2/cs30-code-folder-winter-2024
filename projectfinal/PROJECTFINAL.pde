@@ -23,14 +23,17 @@ void draw() {
         }
         
         theBall.display();
+          
+    
+        }
 
     }
   
 
-}
+
 
 void mousePressed() {
-  ballGroup.add(new Ball(mouseX, mouseY, 100, width, height));
+  ballGroup.add(new Ball(mouseX, mouseY, 100, width, height  ));
 }
 
 void keyPressed() {
@@ -49,4 +52,17 @@ void keyPressed() {
   else if (keyCode == LEFT || key == 'a') {
     joe.move(3);
   }
+
+
+
+
+  // should spawn infected ball  
+ if (key == 'j'){
+
+  ballGroup.add(new Ball(width/2, height/2, 50, width, height ));
+
+ }
+
+
+
 }

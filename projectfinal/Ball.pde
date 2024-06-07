@@ -23,9 +23,17 @@ class Ball {
         // Passing over the width and height data of the screen
         width = windoww; 
         height = windowh;
+
+        
     }
 
     void display() {
+        if (infected == true ){
+            cr = 255;
+            cg= 0;
+            cb= 0;
+          }
+
         fill(cr, cg, cb);
         circle(x,y,d);
     }
@@ -63,8 +71,16 @@ class Ball {
             //Ball 2 gets velocity 1
             otherBall.dx = tempdx;
             otherBall.dy = tempdy;
+
+            // spread the infection 
+            if (otherBall.infected == true && infected == false ){
+                infected = true;
+            }
+            else if (otherBall.infected == false && infected == true){
+                infected = false; 
+          }
+
         }
 
     }
-
 }
