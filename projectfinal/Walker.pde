@@ -34,6 +34,10 @@ class Walker {
     else if (dir == 3) {
       x = x - speed;
     }
+  
+  
+    }
+
   }
   
 }
