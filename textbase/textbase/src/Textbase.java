@@ -1,27 +1,93 @@
 import java.util.Scanner;
+
 public class Textbase {
-    public static void main(String[] args) throws Exception {
+   Scanner myScanner;
+    String playname;
+    int yourHP;
+    String myweapon;
+    int choice;
+
+    public static void main(String[] args)  {
        
-        String playname;
         Scanner myScanner;
-        myScanner = new Scanner(System.in);
+         myScanner = new Scanner(System.in);
 
-        System.out.println("please enter your name ");
-
-        playname = myScanner.nextLine();
+         System.out.println("please enter your name ");
+        String 
+         playname = myScanner.nextLine();
         
         System.out.println("hello " + playname + " lets start ");
-        System.out.println("'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''");
+        // System.out.println("'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''");
 
 
         Textbase textbase;
         textbase = new Textbase();
       
         textbase.playersetUp(); // player set up method 
-
         textbase.forest();
+   
+    }
 
-    //    Scanner myScanner;
+    public void playersetUp(){
+
+        yourHP = 15;
+        
+        myweapon = "fish slap";
+       
+
+        System.out.println("your currnet weapon  " + myweapon );
+            
+
+        System.out.println("your HP is " + yourHP );
+        
+        System.out.println("");
+       
+    }
+public void forest(){ 
+
+    System.out.println("");
+    
+
+    System.out.println( " into the forest you go");
+    System.out.println( " A bear is standing on a stump trying to get honey from a tall hive ");
+    System.out.println( " what do you want to do ");
+
+    System.out.println("");
+    
+
+    System.out.println( " 1: attck the bear show him whose boss \n 2: educate the bear and tell him how hard the bees worked to make the honey he is stealing  \n 3: try help the bear ");
+    
+    choice = myScanner.nextInt();
+
+    if (choice == 1){
+        System.out.println(" you swing your fish at the bear and he swallows it whole");
+        
+    }
+
+    if (choice==2){
+        System.out.println( " the bear attacks you");
+        yourHP = yourHP - 15;
+        System.out.println(" your current HP" + yourHP);
+    }
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//    Scanner myScanner;
 
     //    String playername;
     //    myScanner = new Scanner(System.in);
@@ -62,46 +128,3 @@ public class Textbase {
     //     yourHP = yourHP - 4; 
 
     //     System.out.println( " currnet HP is " + yourHP);
-    }
-
-    public void playersetUp(){
-
-        String myweapon;
-        String mycolth; 
-        myweapon = "fish slap";
-        mycolth = " pant ";
-
-
-        System.out.println("your currnet weapon and cloth are " + myweapon + " and" + mycolth);
-
-        int yourHP;
-        yourHP = 15; 
-
-        System.out.println("your HP is " + yourHP );
-        
-        System.out.println("");
-       
-    }
-public void forest(){ 
-
-    System.out.println("");
-    
-
-    System.out.println( " into the forest you go");
-    System.out.println( " A bear is standing on a stump trying to get honey from a tall hive ");
-    System.out.println( " what do you want to do ");
-
-    System.out.println("");
-    
-
-    System.out.println( " 1: attck the bear show him whose boss ");
-    System.out.println( " 2: educate the bear and tell him how hard the bees worked to make the honey he is stealing  ");
-    System.out.println( " 3: try help the bear  ");
-    
-
-
-
-}
-
-}
-
