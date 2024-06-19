@@ -44,7 +44,7 @@ public class Game {
 
         System.out.println("");  
         System.out.println( " 1: you talk to bear   \n 2: attck the bear show him whose boss  \n 3: leave him be bear \n   ENTER A NUMBER" );  
-        silverRing = 1;
+        
         
          choice = myScanner.nextInt();  
  
