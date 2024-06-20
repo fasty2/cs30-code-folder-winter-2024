@@ -44,7 +44,7 @@ public class Game {
 
         System.out.println("");  
         System.out.println( " 1: you talk to bear   \n 2: attck the bear show him whose boss  \n 3: leave him be bear \n   ENTER A NUMBER" );  
-        silverRing = 1;
+        
         
          choice = myScanner.nextInt();  
  
@@ -260,7 +260,7 @@ public void win(){
     System.out.println("\n------------------------------------------------------------------------------\n" );
     System.out.println("You defeated the fightin MonGoose :) ");
     System.out.println("\n\n The MonGoose dropped a ring!\n\n");
-    System.out.println("1: Go East ");
+    System.out.println("1: Go East then South ");
     System.out.println("\n------------------------------------------------------------------------------\n" );
 
     silverRing = 1;
